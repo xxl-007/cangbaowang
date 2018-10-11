@@ -1,0 +1,37 @@
+@charset "utf-8";
+*{margin:0;padding:0;}
+ul,li,ol{list-style: none;}
+a,u{text-decoration: none;}
+i,em{font-style: normal;}
+b,strong{font-weight: normal;}
+h1,h2,h3,h4,h5,h6{font-size: 16px;}
+input{outline: none;}
+img,span{display: block;}
+img{border:0;}
+.top{width:100%;height:80px;border-bottom:1px solid #e9e6e6;}
+.top .top-con{width:998px;height:48px;margin:0 auto;padding:16px 0;}
+.top-con .left{float:left;width:214px;height:126px;border-radius:40px;background:#fff;}
+.top-con .right{float:right;}
+.top-con .right .right-img{float:left;margin-right:5px;}
+.top-con .right .right-con{float:left;}
+ /* .middel{width:100%;background:#fafafa;height:530px;padding:68px;} */
+.middel{width:100%;height:590px;background:#fafafa;border-bottom:1px solid #e9e6e6;margin-bottom:10px;}
+.middel-con{width:998px;height:100%;position: relative;margin:0 auto;}
+.middel .img{position:absolute;left:0;top:93px;}
+.box{width:348px;height:470px;background:#fff;right:0;top:64px;position:absolute;padding:0 32px;}
+.box .ul1{width:348px;height:65px;padding-top:25px;}
+.box .ul1 li{float:left;width:140px;height:25px;text-align: center;border-left:0;}
+.box .ul1 li:last-of-type{border-left:2px solid #666;}
+.box .form-control{height:50px;margin-bottom:16px;}
+.box .btn{width:100%;height:50px;background:orange;color:#fff;margin:10px 0;}
+.box .ul2 li{font-size:12px;float:right;line-height: 26px;color:orange;}
+.box .ul2 li:first-of-type{float:left;}
+.box .ul2{margin-bottom:64px;}
+.box .ul3{width:100%;height:86px;line-height: 86px;display: flex;justify-content: space-around;}
+.box .p3{color:#ccc;font-size:12px;}
+.box .ul3 a{float:left;width:30px;height:30px;margin-top:20px;cursor: pointer;}
+.bottom{width:100%;height:90px;margin:0 auto;color:#666;position: relative;background:#fafafa;border-top:1px solid #e9e6e6;}
+.bottom ul{width:400;position:relative;top:20px;left:50%;margin-left:-200px;}
+.bottom ul li{float:left;padding: 0 14px;border-right:2px solid #999;font-size:14px;}
+.bottom ul li a{color:#666;}
+.bottom p{text-align: center;}
