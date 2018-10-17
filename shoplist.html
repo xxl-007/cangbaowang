@@ -8,14 +8,21 @@
     <title>商品详情页</title>
     <link rel="stylesheet" href="css/shouye.css">
     <style>
-        #banner{width:100%;height:600px;}
-        #banner .swiper-container{width:100%;height:500px;background:#f5f7f8;padding-top:50px;}
-        #banner .shop-con{width:1204px;height:90%;background:#fff;margin:0 auto;border:1px solid rgb(221, 218, 218);}
-        #banner .shopimg{width:400px;height:100%;float:left;margin-right:100px;}
-        #banner .imation{width:680px;height:80%;float:left;border-radius:30px;display:flex;align-items: center;
-            justify-content: center;flex-direction: column;background:#e4dede;margin-top:40px;}
+        #banner{width:100%;height:700px;}
+        #banner .swiper-container{width:100%;height:500px;background:#f5f7f8;padding-top:50px;padding-bottom:50px;}
+        #banner .shop-con{margin-bottom:100px;width:1204px;height:100%;background:#fff;margin:0 auto;border:1px solid rgb(221, 218, 218);position: relative;}
+        #banner .shopimg{width:250px;height:250px;;float:left;left:40px;top:100px;position: absolute;margin-right:200px;border:1px solid #ccc;padding:6px;}
+        #banner .shopimg .draft{width:150px;height:150px;position: absolute;left:0;top:0;background:rgba(0,0,0,0.5);display:none;}
+        #banner .shopimg img{width:250px;height:250px;}
+        #banner .shopimg2{left:330px;top:20px;overflow: hidden;width:450px;height:450px;display: none;z-index: 9999;background:#fff;}
+        #banner .shopimg2 img{width:750px;height:750px;position: absolute;z-index: 9999;}
+        #banner .imation{position: absolute;left:450px;top:20px;width:680px;height:60%;float:left;border-radius:30px;display:flex;align-items: center;
+            justify-content: center;flex-direction: column;background:#f5f7f8;margin-top:40px;}
+        #banner .imation .span1{font-weight: bold;font-size: 22px;}
+        #banner .imation .hprice span{color:orange;font-size: 20px;}
         #banner .imation h1{width:200px;height:40px;margin-bottom:15px;}
         #banner .imation a{width:100px;height:40px;background:orange;color:#fff;line-height: 40px;text-align: center;float:left;margin-right:5px;}
+    
     </style>
 
 </head>
@@ -239,7 +246,9 @@
     <script src="ajax.js"></script>
     <script src="shoplist.js"></script>
     <script>
-        // shopList.init(".main");
+       
+
+
     </script>
 
 

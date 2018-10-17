@@ -62,13 +62,8 @@ var shopCar = (function () {
                 document.querySelector(".cancle").onclick=function(){
                     document.querySelector("#keep").style.display="none";
                     target.parentNode.previousElementSibling.style.display="none";
-                }  
-                
+                }        
             }
-                        
-        
-
-
         },
         //获取商品信息
         getShopList: function () {
@@ -122,9 +117,9 @@ var shopCar = (function () {
                                 <div class="shopimg"><img src="${shop[3]}" alt=""></div>
                                 <div class="imation">
                                     <h1>商品名称：<span class="span1 shop-name">${shop[1]}</span></h1>
-                                    <h1>商品价格：￥<span class="span2 price">${shop[2]}</span></h1>
+                                    <h1 class="hprice">商品价格：<span>￥</span><span class="span2 price">${shop[2]}</span></h1>
                                     <h1>商品数量： <input type="number" class="shop-count" value="${data[i].count}"></h1>
-                                    <h1>商品总价：￥<span class="span2 shop-total">${shop[2] * data[i].count}</span></h1>
+                                    <h1 class="hall">商品总价：  <span>￥</span><span class="span2 shop-total">${shop[2] * data[i].count}.00</span></h1>
                                     <button class="shop-btn-del btn" attr-id="${data[i].id}">删除</button><br /><br />
                                 </div>
                         </div>`);

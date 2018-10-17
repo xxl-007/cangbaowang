@@ -1,3 +1,57 @@
+var big = function () {
+    return {
+        init: function () {
+            this.$draft = document.querySelector(".draft");
+            this.$shopimg1 = document.querySelector(".shopimg1");
+            console.log(this.$shopimg1);
+            this.$shopimg2 = document.querySelector(".shopimg2");
+            this.event();
+
+        },
+        event: function () {
+            var _this = this;
+            this.$shopimg1.onmouseenter = function (e) {
+                e = e || window.event;
+                _this.$draft.style.display = "block";
+                _this.$shopimg2.style.display = "block";
+                var _x = this.offsetLeft + _this.$draft.offsetWidth / 2+this.parentNode.offsetLeft;
+                var _y = this.offsetTop + _this.$draft.offsetHeight / 2+this.parentNode.offsetTop +this.parentNode.parentNode.parentNode.offsetTop;
+                var maxx = this.clientWidth - _this.$draft.offsetWidth;
+                var maxy = this.clientHeight - _this.$draft.offsetHeight;
+                console.log(_y,this.offsetTop,this.parentNode.offsetTop,this.parentNode.offsetParent)
+                this.onmousemove = function (e) {
+                    e = e || window.event;
+                    var x = e.clientX - _x;
+                    var y = e.clientY - _y;
+                    if (x > maxx) {
+                        x = maxx;
+                    } else if (x < 0) {
+                        x = 0;
+                    }
+                    if (y > maxy) {
+                        y = maxy;
+                    } else if (y < 0) {
+                        y = 0;
+                    }
+                    _this.$draft.style.left = x + "px";
+                    _this.$draft.style.top = y + "px";
+                    var img = _this.$shopimg2.querySelector("img");
+                    img.style.left = -3 * x + 'px';
+                    img.style.top = -3 * y + 'px';
+                    // console.log(img.style.left,img.style.top)
+
+                }
+
+            }
+            _this.$shopimg1.onmouseleave = function () {
+                _this.$draft.style.display = "none";
+                _this.$shopimg2.style.display = "none";
+            }
+
+        }
+    }
+
+}
 
 var shopList = (function () {
     return {
@@ -30,6 +84,7 @@ var shopList = (function () {
                 data:{id:location.search.split("=")[1]},
                 success:function(data){
                     _this.insertData(data);
+                    big().init();
                 }
             }
             sendAjax("shop.php",options)
@@ -37,10 +92,14 @@ var shopList = (function () {
         // 渲染数据库的商品信息
         insertData:function(data){
             console.log(data);
-            var shop=(`<div class="shopimg"><img src="${data.adress}"></div>
+            var shop=(`<div class="shopimg shopimg1">
+                            <img src="${data.adress}">
+                            <div class="draft"></div>
+                        </div>
+                        <div class="shopimg shopimg2"><img src="${data.adress}"></div>
                         <div class="imation">
                             <h1>商品名称：<span class="span1">${data.name}</span></h1>
-                            <h1>商品价格：￥<span class="span2">${data.price}</span></h1>
+                            <h1 class="hprice">商品价格：<span>￥</span><span class="span2">${data.price}</span></h1>
                             <h1>商品数量： <input type="number" value="1" class="shop-count"></h1>
                             <div>
                                 <a href="#" class="addcar" attr-id=${data.id}>加入购物车</a>
