@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品详情页</title>
+    <link rel="stylesheet" href="css/shouye.css">
+    <style>
+        #banner{width:100%;height:700px;}
+        #banner .swiper-container{width:100%;height:500px;background:#f5f7f8;padding-top:50px;padding-bottom:50px;}
+        #banner .shop-con{margin-bottom:100px;width:1204px;height:100%;background:#fff;margin:0 auto;border:1px solid rgb(221, 218, 218);position: relative;}
+        #banner .shopimg{width:250px;height:250px;;float:left;left:40px;top:100px;position: absolute;margin-right:200px;border:1px solid #ccc;padding:6px;}
+        #banner .shopimg .draft{width:150px;height:150px;position: absolute;left:0;top:0;background:rgba(0,0,0,0.5);display:none;}
+        #banner .shopimg img{width:250px;height:250px;}
+        #banner .shopimg2{left:330px;top:20px;overflow: hidden;width:450px;height:450px;display: none;z-index: 9999;background:#fff;}
+        #banner .shopimg2 img{width:750px;height:750px;position: absolute;z-index: 9999;}
+        #banner .imation{position: absolute;left:450px;top:20px;width:680px;height:60%;float:left;border-radius:30px;display:flex;align-items: center;
+            justify-content: center;flex-direction: column;background:#f5f7f8;margin-top:40px;}
+        #banner .imation .span1{font-weight: bold;font-size: 22px;}
+        #banner .imation .hprice span{color:orange;font-size: 20px;}
+        #banner .imation h1{width:200px;height:40px;margin-bottom:15px;}
+        #banner .imation a{width:100px;height:40px;background:orange;color:#fff;line-height: 40px;text-align: center;float:left;margin-right:5px;}
+    
+    </style>
+
+</head>
+
+<body>
+    <div id="top">
+        <div class="top-con">
+            <div class="left">
+
+                <li>欢迎来到&nbsp;&nbsp;<a href="shouye.html">藏宝网</a></li>
+                <li><a href="#"><img src="images/1_03.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/1_05.jpg" alt=""></a></li>
+                <li><a href="login.html">[登录]</a></li>
+                <li><a href="regester.html">[注册]</a></li>
+            </div>
+            <div class="right">
+                <li><a href="#">移动端</a></li>
+                <li><a href="#">商家管理</a></li>
+                <li><a href="#">我的订单</a></li>
+                <li><a href="#">我的收藏</a></li>
+                <li><a href="#">客户服务</a></li>
+                <li><a href="#">关注我们</a></li>
+            </div>
+        </div>
+    </div>
+    <!-- nav -->
+    <div id="nav">
+        <div class="nav-con">
+            <div class="nav-1 navcon"><img src="images/2.png" alt=""></div>
+            <div class="nav-2 navcon">
+                <p>藏地吃,住,行,游,购,娱综合平台</p>
+            </div>
+            <div class="box navcon nav-3">
+                <input type="text" id="inp">
+                <button type="text" id="btn">搜索</button>
+                <ul>
+                    <!-- 
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                          -->
+                </ul>
+            </div>
+            <div class="nav-4 navcon"><a href="shopcar.html">购物车</a></div>
+        </div>
+
+    </div>
+    <!-- banner -->
+    <div id="banner">
+        <div id="tit">
+            <div class="tit-con">
+                <div class="box">
+                    <div class="sortclass">
+                        <a href="#">全部商品分类</a>
+                    </div>
+                    <div class="bannertit">
+                        <div class="yiji">
+                            <ul class="menue">
+                                <li>
+                                    <a href="#">藏式特产<em>></em></a>
+                                    <div class="ejmenue"></div>
+                                </li>
+                                <li>
+                                    <a href="#">佛教用品<em>></em></a>
+                                    <div class="ejmenue"></div>
+                                </li>
+                                <li>
+                                    <a href="#">服饰、首饰<em>></em></a>
+                                    <div class="ejmenue"></div>
+                                </li>
+                                <li>
+                                    <a href="#">藏手工品<em>></em></a>
+                                    <div class="ejmenue"></div>
+                                </li>
+                                <li>
+                                    <a href="#">藏式家居<em>></em></a>
+                                    <div class="ejmenue"></div>
+                                </li>
+                                <li>
+                                    <a href="#">生活用品<em>></em></a>
+                                    <div class="ejmenue"></div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="swiper-container">
+            <div class="shop-con">
+                <!-- 购物车部分 -->
+                <!-- <div class="shopimg"></div>
+                <div class="imation">
+                    <h1>商品名称：<span class="span1">牛肉干</span></h1>
+                    <h1>商品价格：￥<span class="span2">35.00</span></h1>
+                    <h1>商品数量： <input type="number" value="1"></h1>
+                    <div>
+                        <a href="#" class="addcar">加入购物车</a>
+                        <a href="#">查看购物车</a>
+                    </div>
+                </div> -->
+
+
+            </div>
+        </div>
+    </div>
+    <div id="bottom">
+        <div class="one">
+            <li>
+                <span><img src="images/7.gif" alt=""></span>
+                <span>七天退货</span>
+            </li>
+            <li>
+                <span><img src="images/8.gif" alt=""></span>
+                <span>七天退货</span>
+            </li>
+            <li>
+                <span><img src="images/9.gif" alt=""></span>
+                <span>七天退货</span>
+            </li>
+            <li>
+                <span><img src="images/10.gif" alt=""></span>
+                <span>七天退货</span>
+            </li>
+            <li class="rf"><span>客服电话：<a href="#">0941-6257726</a>&nbsp;&nbsp;<em>08:00-22:30(周一至周四)</em></span></li>
+        </div>
+        <div class="two">
+
+            <ul>
+                <li>
+                    <p class="p1">新手指南</p>
+                </li>
+                <li><a href="#">积分细则</a></li>
+                <li><a href="#">积分兑换说明</a></li>
+                <li><a href="#">忘记密码</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <p class="p1">新手指南</p>
+                </li>
+                <li><a href="#">积分细则</a></li>
+                <li><a href="#">积分兑换说明</a></li>
+                <li><a href="#">忘记密码</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <p class="p1">新手指南</p>
+                </li>
+                <li><a href="#">积分细则</a></li>
+                <li><a href="#">积分兑换说明</a></li>
+                <li><a href="#">忘记密码</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <p class="p1">新手指南</p>
+                </li>
+                <li><a href="#">积分细则</a></li>
+                <li><a href="#">积分兑换说明</a></li>
+                <li><a href="#">忘记密码</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <p class="p1">新手指南</p>
+                </li>
+                <li><a href="#">积分细则</a></li>
+                <li><a href="#">积分兑换说明</a></li>
+                <li><a href="#">忘记密码</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <p class="p1">新手指南</p>
+                </li>
+                <li><a href="#">积分细则</a></li>
+                <li><a href="#">积分兑换说明</a></li>
+                <li><a href="#">忘记密码</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <img src="images/aa_03.jpg" alt="">
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <p class="p1">商家合作</p>
+                </li>
+                <li>
+                    <p class="p2">错过天猫？别再错过我们</p>
+                </li>
+                <li>
+                    <p class="p2">藏宝网开启全新旅程</p>
+                </li>
+                <li><a href="#">关于入驻 ></a></li>
+
+            </ul>
+
+
+        </div>
+        <div class="three">
+            <ul>
+                <li><a href="#">返回首页</a></li>
+                <li><a href="#"> 电信增值业务经营许可证</a></li>
+                <li><a href="#"> 出版物经营许可证</a></li>
+                <li><a href="#">网络文化经营许可证</a></li>
+                <li><a href="#"> 广电视节目营许可证</a></li>
+                <li><a href="#">藏宝网营业执照</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">联系我们</a></li>
+                <li><a href="#">友情链接</a></li>
+            </ul>
+            <p>CopyRight © 2016-2017 甘南藏宝网络商务开发有限责任公司 版权所有 客户服务中心(7×24):0941-8257726 甘B2-20140002-1 | 甘B2-20140002-2
+                邮箱：admin@zbw168.net </p>
+            <p>地址：甘肃省甘南州合作市民俗一条街三号楼二楼 陇公网安备：62300102000007号</p>
+        </div>
+    </div>
+    <script src="js/jsonp.js"></script>
+    <script src="js/shouyeinp.js"></script>
+
+    <script src="ajax.js"></script>
+    <script src="shoplist.js"></script>
+    <script>
+       
+
+
+    </script>
+
+
+</body>
+
+</html>
