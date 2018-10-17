@@ -112,8 +112,10 @@ position: absolute;bottom:0;}
     height: 100%;
 } 
 .con .con-3 .top .top-right .top22{width:605px;height:486px;background:#fff;float:left;border-top:1px solid #efefef;}
+.con .con-3 .top .top-right .top22:hover li{opacity:0.5;transition: 1s;}
 .con-3 .top22 li{width:160px;height:202px;float:left;border-bottom:1px solid #efefef;
     border-right:1px solid #efefef;padding:20px;text-align: center;cursor: pointer;}
+.con .con-3 .top .top-right .top22 li:hover{opacity:1;transition: 1s;}
 .con-3 .top22 li img{width:127px;height:100px;}
 .con-3 .top22 li h1{padding:15px 0;color:orange;font-weight: bold;}
 .con-3 .top22 li h1:last-child{color:#000;font-weight:bolder;}

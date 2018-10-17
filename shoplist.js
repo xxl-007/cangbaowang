@@ -103,7 +103,7 @@ var shopList = (function () {
                             <h1>商品数量： <input type="number" value="1" class="shop-count"></h1>
                             <div>
                                 <a href="#" class="addcar" attr-id=${data.id}>加入购物车</a>
-                                <a href="shopcar.html">查看购物车</a>
+                                <a href="shopcar.html" class="watchcar">查看购物车</a>
                             </div>
                         </div>`);
             this.$ele.innerHTML=shop;
