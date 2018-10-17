@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/xxl-007/cangbaowangaa/issues"
   },
-  "homepage": "https://github.com/xxl-007/cangbaowangaa#readme"
+  "homepage": "https://github.com/xxl-007/cangbaowangaa#readme",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-connect": "^5.6.1",
+    "gulp-htmlmin": "^5.0.1"
+  }
 }
