@@ -87,7 +87,7 @@ var shopList = (function () {
                     big().init();
                 }
             }
-            sendAjax("shop.php",options)
+            sendAjax("php/shop.php",options)
         },
         // 渲染数据库的商品信息
         insertData:function(data){

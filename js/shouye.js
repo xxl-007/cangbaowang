@@ -54,7 +54,7 @@ var shouye = (function () {
                     console.log(data);
                 }
             }
-            sendAjax("shouyeshop.php",options)
+            sendAjax("php/shouyeshop.php",options)
 
         },
         // 渲染数据库的数据到首页中

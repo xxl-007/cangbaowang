@@ -84,7 +84,7 @@ var shopCar = (function () {
             }
             options.data.id = `[${ids}]`;
             if(shops.length>0){
-                sendAjax("shopcar.php", options);
+                sendAjax("php/shopcar.php", options);
             }
         },
         // 获取本地的数据到购物车 
