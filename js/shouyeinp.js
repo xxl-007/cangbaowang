@@ -33,7 +33,6 @@ function getdata(data) {
 
     }
     $box.appendChild($ul);
-
 }
 $box.onclick = function (e) {
     e = e || window.event;
