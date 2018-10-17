@@ -1,0 +1,19 @@
+{
+  "name": "myfirstobjct",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xxl-007/cangbaowangaa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xxl-007/cangbaowangaa/issues"
+  },
+  "homepage": "https://github.com/xxl-007/cangbaowangaa#readme"
+}
