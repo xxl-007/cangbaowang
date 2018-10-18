@@ -35,7 +35,7 @@ gulp.task("watch",function(){
 
 
 //合并任务,让build任务执行中括号里的任务
-gulp.task("build",["all","html","js"])
+gulp.task("build",["html","js"])
 //开启服务器
 gulp.task("connect",function(){
     connect.server({
